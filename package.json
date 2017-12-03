@@ -1,6 +1,6 @@
 {
   "name": "fifa18-proclubs-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A wrapper to get stats for Fifa 18 Pro Clubs Teams",
   "main": "index.js",
   "scripts": {
