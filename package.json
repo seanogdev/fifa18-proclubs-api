@@ -1,7 +1,7 @@
 {
-  "name": "fifa-18-pro-clubs-api",
+  "name": "fifa18-proclubs-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "A wrapper to get stats for Fifa 18 Pro Clubs Teams",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -4,9 +4,18 @@ function * values (obj) {
   for (let prop of Object.keys(obj)) { yield obj[prop] }
 }
 
-exports.getClubIdByName = async query => {
+const searchForClubByName = exports.searchForClubByName = async (query) => {
   const res = await api.get(`clubsComplete/${query}`)
-  return res.clubId
+  return res
+}
+
+exports.getClubIdByName = async query => {
+  try {
+    const res = await searchForClubByName(query)
+    return res.clubId
+  } catch (e) {
+    throw Error(e)
+  }
 }
 exports.getClubInfo = clubId => api.get(`clubs/${clubId}/info`)
 exports.getClubMatchHistory = clubId => api.get(`clubs/${clubId}/matches`)

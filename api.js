@@ -12,6 +12,6 @@ exports.get = async function (endpoint) {
     const response = await axios.get(`${API_URL}/${API_PLATFORM}/${endpoint}`)
     return Array.from(values(response.data.raw))[0]
   } catch (e) {
-    // console.log(e)
+    throw Error(e)
   }
 }
