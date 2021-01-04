@@ -16,7 +16,7 @@
   "author": "Sean O'Grady",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.17.1"
+    "axios": "^0.21.1"
   },
   "devDependencies": {
     "eslint": "^4.12.1",
